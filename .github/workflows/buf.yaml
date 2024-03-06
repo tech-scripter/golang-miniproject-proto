@@ -14,6 +14,8 @@ jobs:
       - uses: bufbuild/buf-lint-action@v1
         with:
           input: 'proto'
+          buf_user: ${{ secrets.BUF_USER }}
+          buf_api_token: ${{ secrets.BUF_API_TOKEN }}
 
       # We need to fetch main, so we can compare breaking changes against whatever is in main right now.
       - name: Fetch origin/main
