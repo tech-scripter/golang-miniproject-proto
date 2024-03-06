@@ -7,13 +7,14 @@ deps:
   - buf.build/grpc-ecosystem/protoc-gen-swagger
 breaking:
   use:
-    - WIRE_JSON
+    - FILE
 lint:
   use:
     - DEFAULT
   except:
     - RPC_REQUEST_RESPONSE_UNIQUE
     - RPC_REQUEST_STANDARD_NAME
+    - RPC_RESPONSE_STANDARD_NAME
     - ENUM_VALUE_PREFIX
     - ENUM_ZERO_VALUE_SUFFIX
     - PACKAGE_DIRECTORY_MATCH

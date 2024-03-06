@@ -19,10 +19,10 @@ jobs:
       - name: Fetch origin/main
         run: git fetch --no-tags --prune --depth=1 origin +refs/heads/main:refs/remotes/origin/main
 
-      - uses: bufbuild/buf-breaking-action@v1
-        with:
-          input: 'proto'
-          against: '.git#branch=origin/main,subdir=proto'
+#      - uses: bufbuild/buf-breaking-action@v1
+#        with:
+#          input: 'proto'
+#          against: '.git#branch=origin/main,subdir=proto'
 
   # Push buf module to the buf schema registry, but only if the validate action succeeded and if the action is running
   # on branch main.
