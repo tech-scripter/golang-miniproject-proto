@@ -7,7 +7,7 @@ deps:
   - buf.build/grpc-ecosystem/protoc-gen-swagger
 breaking:
   use:
-    - FILE
+    - WIRE_JSON
 lint:
   use:
     - DEFAULT
