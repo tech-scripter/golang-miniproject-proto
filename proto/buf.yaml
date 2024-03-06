@@ -1,4 +1,5 @@
 version: v1
+name: buf.build/netizen/golang-miniproject-proto
 deps:
   - buf.build/googleapis/googleapis
   - buf.build/grpc-ecosystem/grpc-gateway
@@ -13,6 +14,7 @@ lint:
   except:
     - RPC_REQUEST_RESPONSE_UNIQUE
     - RPC_REQUEST_STANDARD_NAME
+    - RPC_RESPONSE_STANDARD_NAME
     - ENUM_VALUE_PREFIX
     - ENUM_ZERO_VALUE_SUFFIX
     - PACKAGE_DIRECTORY_MATCH
