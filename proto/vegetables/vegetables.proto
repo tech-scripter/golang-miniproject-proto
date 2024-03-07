@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package rf.golangminiproject.v1alpha2;
-
-option go_package = "pkg/gen";
-
-message Vegetable {
-  string name = 1;
-}
