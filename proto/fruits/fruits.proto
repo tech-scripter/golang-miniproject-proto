@@ -33,8 +33,12 @@ option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_swagger) = {
 };
 
 service FruitService {
+  // deprecating entire service
+  // option deprecated = true;
   // GetFullList return all of the data
   rpc GetFullList (GetAllFruitsRequest) returns (GetFullListResponse) {
+    // deprecating method
+    // option deprecated = true;
     option (google.api.http) = {
       get: "/v1alpha1/full-list",
     };
@@ -54,7 +58,11 @@ message GetFullListResponse {
 }
 
 message Fruit {
+  // deprecating entire message
+  // option deprecated = true
   string fruit = 1;
+  // deprecating message field
+  // string smth = 2 [deprecated = true];
 }
 
 message GetFruitByNameRequest {
