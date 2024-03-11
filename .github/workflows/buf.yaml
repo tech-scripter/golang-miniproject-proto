@@ -26,7 +26,7 @@ jobs:
           input: "proto"
            # The 'main' branch of the GitHub repository that defines the module.
            # Note we specify the subdir to compare against.
-          against: "https://github.com/${}.git#branch=main,ref=HEAD~1,subdir=proto"
+          against: "https://github.com/tech-scripter/golang-miniproject-proto.git#branch=main,ref=HEAD~1,subdir=proto"
 
   push:
     runs-on: ubuntu-latest
