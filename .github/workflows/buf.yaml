@@ -1,10 +1,17 @@
 name: buf
 
 on:
+  pull_request:
   push:
     branches:
       - main
       - develop
+
+#        on:
+#          pull_request:
+#          push:
+#            branches:
+#              - master
 
 jobs:
   build:
